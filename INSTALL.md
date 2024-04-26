@@ -47,15 +47,20 @@ On Windows you should then run the following to install the required dlls into t
 
 ## 4.1 Compilation in Linux x64 systems
 
-On Linux x64, the  following commands are required for successful compilation:
+On Linux x64, Qt6 is now Required. Use the following commands for successful compilation:
+
+Create and enter a build directory
+
+     mkdir build
+     cd build
 
 Build the translations
 
-     lrelease chessx.pro
+     lrelease-pro ../chessx.pro
 
 Run qmake, specifically qt6 version
 
-     qmake6
+     qmake6 ../
 
 Compile with
 
@@ -63,7 +68,7 @@ Compile with
 
 If compilation finishes successfully, the executable will be found as:
 
-     release/chessx
+     build/release/chessx
 
 # 5. Problems
 
